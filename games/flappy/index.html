@@ -21,33 +21,31 @@
      h3{ font-family:'Permanent Marker'; }
  </style> 
  <body>
-     <h1><b>Flappy Bird !!! (game) <div id="div1" class="fa"></div> </b></h1>
-     <h3><b>If you want to have a very high score. Think out of this game !!  ~_^ <hr> and tell me your high score </b></h3>
-<canvas id="myCanvas" width=320 height=480 
+  <canvas id="myCanvas" width=320 height=480 
  style="background:url('http://s2js.com/img/etc/flappyback.png');  background-size: 100%; height: 95% " 
-</canvas>
-    <h3> <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></h3>
-<script> 
-function smile() {
-  var a;
-  a = document.getElementById("div1");
-  a.innerHTML = "&#xf118;";
-  setTimeout(function () {
+  </canvas>
+  <h3> <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></h3>
+ <script> 
+  function smile() {
+    var a;
+    a = document.getElementById("div1");
+    a.innerHTML = "&#xf118;";
+    setTimeout(function () {
       a.innerHTML = "&#xf11a;";
     }, 1000);
-  setTimeout(function () {
+    setTimeout(function () {
       a.innerHTML = "&#xf119;";
     }, 2000);
-  setTimeout(function () {
+    setTimeout(function () {
       a.innerHTML = "&#xf11a;";
     }, 3000);
-}
-smile();
-setInterval(smile, 4000);
+  }
+  smile();
+  setInterval(smile, 4000);
 
-function myFunction(x) {
+  function myFunction(x) {
     x.classList.toggle("fa-thumbs-down");
-}
+  }
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //
  var ctx = myCanvas.getContext("2d"); 
@@ -157,7 +155,7 @@ function display_intro_instructions () {
    ctx.font= "25px Arial";
    ctx.fillStyle= "red";
    ctx.textAlign="center";
-   ctx.fillText("Press, touch or click to start", myCanvas.width / 2, myCanvas.height / 4);  
+   ctx.fillText("Press any key, touch, or click to start", myCanvas.width / 2, myCanvas.height / 4);  
    }
 function display_game_over () {
    var score = 0;                                             
@@ -166,10 +164,10 @@ function display_game_over () {
    ctx.font= "30px Arial";
    ctx.fillStyle= "red";
    ctx.textAlign="center";
-   ctx.fillText("Game Over", myCanvas.width / 2, 100);  
+   ctx.fillText("oof", myCanvas.width / 2, 100);  
    ctx.fillText("Score: " + score, myCanvas.width / 2, 150);  
    ctx.font= "20px Arial";
-   ctx.fillText("Click, touch, or press to play again", myCanvas.width / 2, 300);  
+   ctx.fillText("Click, touch, or press any key to play again", myCanvas.width / 2, 300);  
    }
 function display_bar_running_along_bottom() {
      if (bottom_bar_offset < -23) bottom_bar_offset = 0;
