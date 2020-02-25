@@ -1,0 +1,19 @@
+body {
+  background-color: #4c9ce7;
+  color: #ff00ee;
+}
+
+div.floattext, div.floattext:hover::after{
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-size: 30px;
+  color: red;
+  position:relative;
+}
+
+div.floattext:hover{
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-size: 35px;
+  color: black;
+  position: relative;
+  text-shadow: 2px 2px #ff00ee;
+}
