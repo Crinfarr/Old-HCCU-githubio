@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: hecancanyou.xyz
+Token: 89b6adc961b9544781b4db88df5c7772d9672610d3f3162c5423d63153ce3299
